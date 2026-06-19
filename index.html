@@ -1,0 +1,304 @@
+All four files are already built — here are the full contents to copy straight into VS Code.
+
+**`index.html`**```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vinotha V | Software Engineer</title>
+<meta name="description" content="Portfolio of Vinotha V, fresher software engineer skilled in full-stack development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- OS-STYLE NAVBAR -->
+<header class="osbar">
+  <div class="osbar-left">
+    <span class="osbar-dot"></span>
+    <span class="osbar-brand">vinotha@portfolio</span>
+  </div>
+  <nav class="osbar-nav" id="osbarNav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certs</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="osbar-right">
+    <span class="osbar-clock" id="osClock">00:00:00</span>
+    <a href="#contact" class="btn-hire">Hire me</a>
+    <button class="osbar-menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO / TERMINAL -->
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-copy reveal">
+      <span class="badge">
+        <span class="badge-dot"></span>
+        Hello, I'm open to work!
+      </span>
+      <div class="hero-name-row">
+        <div class="avatar">VV<span class="wave">👋</span></div>
+        <div>
+          <h1>Vinotha V</h1>
+          <p class="role-line">Software Engineer <span class="dash">·</span> Fresher</p>
+        </div>
+      </div>
+      <p class="hero-sub">I build clean, functional web apps end to end — from React-free UI to MySQL/MongoDB backends. Currently finishing my B.Tech IT and looking for my first full-time role.</p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View projects</a>
+        <button class="btn btn-outline" id="resumeBtn">Download resume</button>
+      </div>
+
+      <div class="stats-bar">
+        <div class="stat"><span class="stat-num">8.14</span><span class="stat-label">CGPA</span></div>
+        <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Projects</span></div>
+        <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Skills</span></div>
+        <div class="stat"><span class="stat-num">2026</span><span class="stat-label">Graduate</span></div>
+      </div>
+    </div>
+
+    <div class="terminal reveal">
+      <div class="terminal-bar">
+        <span class="t-dot t-red"></span><span class="t-dot t-amber"></span><span class="t-dot t-green"></span>
+        <span class="terminal-title">vinotha — zsh</span>
+      </div>
+      <div class="terminal-body" id="terminalBody">
+        <p><span class="prompt">$</span> <span id="typedLine"></span><span class="cursor">▌</span></p>
+        <div id="terminalOutput" class="terminal-output"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <p class="eyebrow">About</p>
+    <h2 class="section-title">A bit about me</h2>
+    <p class="about-text reveal">
+      I'm an enthusiastic and adaptable software engineer with strong programming fundamentals and hands-on
+      exposure to full-stack development. I enjoy building user-friendly applications using HTML, CSS, JavaScript,
+      PHP, Node.js, Python, MySQL, and MongoDB — and I'm passionate about solving real-world problems through
+      technology, with a habit of continuously learning modern development tools.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section section-alt">
+  <div class="container">
+    <p class="eyebrow">Skills</p>
+    <h2 class="section-title">What I work with</h2>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon">{ }</div>
+        <h3>Programming</h3>
+        <div class="chip-row">
+          <span class="chip">Python</span><span class="chip">Java</span><span class="chip">C</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">◧</div>
+        <h3>Frontend</h3>
+        <div class="chip-row">
+          <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">UI/UX</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">⌁</div>
+        <h3>Backend</h3>
+        <div class="chip-row">
+          <span class="chip">PHP</span><span class="chip">Node.js</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">▤</div>
+        <h3>Database</h3>
+        <div class="chip-row">
+          <span class="chip">MySQL</span><span class="chip">MongoDB</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <div class="container">
+    <p class="eyebrow">Education</p>
+    <h2 class="section-title">Academic background</h2>
+    <div class="edu-list">
+      <div class="edu-card reveal">
+        <div class="edu-period">2022 — 2026</div>
+        <div class="edu-body">
+          <h3>B.Tech, Information Technology</h3>
+          <p>M.A.M College of Engineering and Technology</p>
+          <span class="chip chip-accent">CGPA: 8.14 (up to 6th semester)</span>
+        </div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-period">2021 — 2022</div>
+        <div class="edu-body">
+          <h3>HSC — Higher Secondary</h3>
+          <p>Shanthi Nikethan Matric Hr. Sec. School</p>
+          <span class="chip chip-accent">82.66%</span>
+        </div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-period">2019 — 2020</div>
+        <div class="edu-body">
+          <h3>SSLC</h3>
+          <p>Shanthi Nikethan Matric Hr. Sec. School</p>
+          <span class="chip chip-accent">93%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE / TIMELINE -->
+<section id="experience" class="section section-alt">
+  <div class="container">
+    <p class="eyebrow">Experience</p>
+    <h2 class="section-title">Learning timeline</h2>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Full Stack Developer Intern — Dashboard Development</h3>
+          <ul>
+            <li>Developed a responsive dashboard using HTML, CSS, JavaScript, PHP, and MySQL.</li>
+            <li>Worked on UI layout, data display, and basic backend integration for dynamic web pages.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Python Intern — Game Development</h3>
+          <ul>
+            <li>Developed a Snake Game using Python with event handling, score tracking, and game logic.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <p class="eyebrow">Projects</p>
+    <h2 class="section-title">Things I've built</h2>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-top">
+          <h3>User Registration System</h3>
+        </div>
+        <p>Built a user registration form with frontend validation and database connectivity. Implemented user data storage using MongoDB with a Node.js backend.</p>
+        <div class="chip-row">
+          <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">MongoDB</span><span class="chip">Node.js</span>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-top">
+          <h3>Spam Mail Detection</h3>
+        </div>
+        <p>Built a machine learning model to identify spam emails using text preprocessing and classification techniques.</p>
+        <div class="chip-row">
+          <span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">Scikit-learn</span><span class="chip">Keras</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="section section-alt">
+  <div class="container">
+    <p class="eyebrow">Certifications &amp; Achievements</p>
+    <h2 class="section-title">Recognition along the way</h2>
+    <div class="cert-grid">
+      <div class="cert-card reveal"><p>Honor student — completed up to six academic papers as part of the honor degree track.</p></div>
+      <div class="cert-card reveal"><p>Employability Skills Training Program — selected as 1 of 10 from 60 applicants.</p></div>
+      <div class="cert-card reveal"><p>Presented a paper on Data Warehousing for IoT at Moogambigai College of Engineering.</p></div>
+      <div class="cert-card reveal"><p>AI-Powered Dermatology Hackathon — Anna University, Trichy.</p></div>
+      <div class="cert-card reveal"><p>Code Relay participant — MCE College, Pudukkottai.</p></div>
+      <div class="cert-card reveal"><p>Workshop: Network Simulation Tool · Webinar: Full Stack Automation CI/CD.</p></div>
+      <div class="cert-card reveal"><p>100% attendance — academic year 2023.</p></div>
+      <div class="cert-card reveal"><p>Quiz Student Coordinator (Symposium) · Runner-up, Kho-Kho competition.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <p class="eyebrow">Contact</p>
+    <h2 class="section-title">Let's talk</h2>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p>I'm actively looking for full-time software engineering roles. Reach out — I usually reply within a day.</p>
+        <a href="mailto:vinotha1438@gmail.com" class="contact-line">vinotha1438@gmail.com</a>
+        <a href="tel:+919443356819" class="contact-line">+91 94433 56819</a>
+        <p class="contact-line muted">Perambalur, Tamil Nadu, India</p>
+        <div class="social-row">
+          <a href="https://github.com/vinvtha1438" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/vinotha-v-674190312" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="terminal terminal-contact reveal">
+        <div class="terminal-bar">
+          <span class="t-dot t-red"></span><span class="t-dot t-amber"></span><span class="t-dot t-green"></span>
+          <span class="terminal-title">contact — input</span>
+        </div>
+        <div class="terminal-body">
+          <p id="contactLog" class="contact-log">Type a message and hit enter. It'll open your email app.</p>
+          <p class="contact-input-row">
+            <span class="prompt">$</span>
+            <input type="text" id="contactInput" class="contact-input" placeholder="say hello..." maxlength="180">
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESUME MODAL -->
+<div class="modal-overlay" id="resumeModal">
+  <div class="modal">
+    <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+    <h3>Resume</h3>
+    <p>Hook this up to your actual resume PDF — drop the file in this folder and update the link below.</p>
+    <a href="resume.pdf" class="btn btn-primary" download>Download PDF</a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <span>© 2026 Vinotha V</span>
+    <div class="social-row">
+      <a href="https://github.com/vinvtha1438" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/vinotha-v-674190312" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:vinotha1438@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
